@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 775px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #50443e;
+}
+
+.left-img {
+    width: 30%;
+}
+
+.text-section {
+    width: 70%;
+    padding: 40px 10px 40px 65px;
+}
+
+.heading-1 {
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #dcdcdc;
+    width: 650px;
+}
+
+.text-1 {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 84px;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.input-section,
+.result {
+    margin-top: 30px;
+}
+
+.input-section .inputs {
+    margin-top: 12px;
+}
+
+.input-section .inputs label {
+    padding: 10px 10px 10px 0;
+    font-size: 20px;
+}
+
+
+/* input field styles*/
+
+.input-section .inputs input[type="number"] {
+    padding: 5px;
+    background-color: #50443E;
+    border: 2px solid #F3A60F;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 20px;
+    width: 190px;
+    opacity: 1;
+    appearance: none;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+.input-section .inputs input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* .input-section .inputs input::-moz-placeholder,
+ input:-moz-placeholder {
+     color: #ffffff;
+     font-weight: 900;
+     font-size: 20px;
+     opacity: 1;
+ }
+ 
+ input::placeholder {
+     color: #ffffff;
+     font-weight: 900;
+     font-size: 20px;
+ } */
+
+input:focus-visible {
+    outline: none;
+}
+
+
+/* day- wise inputs*/
+
+.input-section .weekly {
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.input-section .inputs .columns {
+    display: inline-block;
+}
+
+.input-section .weekly .columns .days input {
+    width: 75px;
+}
+
+.input-section .weekly .columns .days {
+    margin: 8px 9px;
+}
+
+.estimate {
+    border-bottom: 1px solid #dcdcdc;
+    width: 650px;
+}
+
+
+/* submission & reset button */
+
+.estimate .btn,
+.estimate .reset {
+    padding: 15px 25px;
+    margin: 22px 10px;
+    background: #f3be0f;
+    border-radius: 20px;
+    border: 2px solid#f3be0f;
+    box-shadow: #0000000d 0px 6px 24px 0px, #00000014 0px 0px 0px 1px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 28.13px;
+    color: #000000;
+}
+
+.estimate .btn:hover,
+.estimate .reset:hover {
+    border: 2px solid #306ee0;
+}
+
+.estimate .btn,
+.estimate .reset {
+    width: 185px;
+}
+
+
+/* result section */
+
+.hidden_div .result .heading-2 .text-2 {
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 84px;
+    font-weight: 600;
+   
+}
+
+.result table tr td span {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.result table tr td {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.result table tr:nth-child(1) {
+    border: none;
+}
+
+.result table tr td {
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+
+
+/* monthly & yearly results*/
+
+.costs table tr td h3 {
+    padding: 25px 25px 0 40px;
+}
+
+.costs table tr td p {
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.costs table tr td span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.costs table tr td:nth-child(1) {
+    border-right: 1px solid #ffffff;
+}
+
+.costs table tr td:nth-child(2) {
+    padding-left: 50px;
+}
+
+.hidden_div {
+    display: none;
+}
